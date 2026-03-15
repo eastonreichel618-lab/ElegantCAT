@@ -5,9 +5,8 @@ Importable wrappers for:
 - `ElegantCAT-v2S`
 
 ## Install
-```powershell
-cd C:\Users\Levit\.openclaw\workspace\Stuff\ElegantCAT-series\ElegantCAT-models
-C:\Users\Levit\AppData\Local\Programs\Python\Python311\python.exe -m pip install -e .
+```bash
+pip install -e .
 ```
 
 ## Python
@@ -15,16 +14,16 @@ C:\Users\Levit\AppData\Local\Programs\Python\Python311\python.exe -m pip install
 from elegantcat import load_model
 
 v2l = load_model("v2L")
-print(v2l.predict("C:/path/to/meow.wav"))
+print(v2l.predict("/path/to/meow.wav"))
 
 v2s = load_model("v2S")
-print(v2s.predict("C:/path/to/meow.wav"))
+print(v2s.predict("/path/to/meow.wav"))
 ```
 
 ## CLI
-```powershell
-elegantcat predict --model v2L --file C:\path\to\meow.wav
-elegantcat predict --model v2S --file C:\path\to\meow.wav
+```bash
+elegantcat predict --model v2L --file /path/to/meow.wav
+elegantcat predict --model v2S --file /path/to/meow.wav
 ```
 
 ## Benchmark stats
@@ -58,8 +57,8 @@ Benchmark manifests are included in `benchmarks/`:
 - `benchmarks/combined63_all_models.json`
 
 ## Paths
-By default the package reads artifacts from:
-- `ElegantCAT-series/ElegantCAT-v2L/artifacts`
-- `ElegantCAT-series/ElegantCAT-v2S/artifacts`
+By default the package expects this repo to live alongside:
+- `ElegantCAT-v2L/`
+- `ElegantCAT-v2S/`
 
-If those folders move, update `src/elegantcat/paths.py`.
+If your layout is different, update `src/elegantcat/paths.py`.
