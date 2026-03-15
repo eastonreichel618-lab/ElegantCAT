@@ -1,0 +1,45 @@
+{
+  "benchmark": "combined_63",
+  "n": 63,
+  "ElegantCAT-v1_accuracy": 0.7142857142857143,
+  "ElegantCAT-v2L_accuracy": 0.8253968253968254,
+  "cat-alan_accuracy": 0.6825396825396826,
+  "ElegantCAT-v1_macro_f1": 0.7120308263165406,
+  "ElegantCAT-v2L_macro_f1": 0.8289424860853433,
+  "cat-alan_macro_f1": 0.6586496544391282,
+  "ElegantCAT-v1_avg_ms": 15.288237096800941,
+  "ElegantCAT-v2L_avg_ms": 18.278959677357513,
+  "cat-alan_avg_ms": 8.534567741955998,
+  "by_source": {
+    "dynamic_superb_13": {
+      "ElegantCAT-v1": {
+        "accuracy": 0.8461538461538461,
+        "macro_f1": 0.7738095238095238
+      },
+      "ElegantCAT-v2L": {
+        "accuracy": 1.0,
+        "macro_f1": 1.0
+      },
+      "cat-alan": {
+        "accuracy": 0.7692307692307693,
+        "macro_f1": 0.6380952380952382
+      },
+      "n": 13
+    },
+    "pandeya_50": {
+      "ElegantCAT-v1": {
+        "accuracy": 0.68,
+        "macro_f1": 0.6873544973544974
+      },
+      "ElegantCAT-v2L": {
+        "accuracy": 0.78,
+        "macro_f1": 0.7896917896917897
+      },
+      "cat-alan": {
+        "accuracy": 0.66,
+        "macro_f1": 0.639022005563359
+      },
+      "n": 50
+    }
+  }
+}
