@@ -6,6 +6,8 @@ Importable wrappers for:
 
 ## Install
 ```bash
+git clone https://github.com/YOUR_NAME/ElegantCAT-models.git
+cd ElegantCAT-models
 pip install -e .
 ```
 
